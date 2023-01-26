@@ -63,7 +63,7 @@
 
     <AtomSection tp="large">
       <MoleculeTitle
-        title="Tokenmoic"
+        title="Tokenomic"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aut
           alias praesentium quod deleniti velit, qui itaque ex quis laboriosam
           eos harum placeat, sunt debitis veritatis? Dolor quasi modi nihil."
