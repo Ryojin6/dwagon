@@ -1,0 +1,16 @@
+_:-ms-fullscreen,
+:root #ie-banner {
+  display: block !important;
+  padding: 5px 20px;
+  background: red;
+  color: black;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+_:-ms-fullscreen,
+:root #ie-banner a {
+  color: blue;
+  text-decoration: underline;
+}

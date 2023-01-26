@@ -1,0 +1,21 @@
+stages:
+  - test
+  - deploy
+
+include:
+  - template: 'Workflows/MergeRequest-Pipelines.gitlab-ci.yml'
+
+image: node:16
+
+variables:
+  CACHE_FALLBACK_KEY: develop
+
+Run eslint:
+  cache:
+    key: "$CI_COMMIT_REF_SLUG"
+    paths:
+      - node_modules/
+  script:
+    - yarn install --frozen-lockfile
+    - yarn lint
+  interruptible: true

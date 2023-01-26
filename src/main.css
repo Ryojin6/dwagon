@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+@layer base {
+  body {
+    background-color: #1a1e37;
+  }
+  .scrollHover {
+    @apply hover:bg-white;
+  }
+  @font-face {
+    font-family: Dwagon;
+    font-weight: normal;
+    src: url('./fonts/dwagon-regular.otf');
+  }
+
+  @font-face {
+    font-family: Dela;
+    font-weight: bold;
+    src: url('./fonts/dela.ttf');
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .custom-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .btn {
+    @apply mt-6 inline-block rounded-3xl bg-r-gray px-8 py-2 text-base uppercase text-white hover:bg-r-pink hover:text-r-gray;
+    @apply lg:px-12 lg:py-3 lg:text-lg;
+    @apply focus:outline-none focus:ring-2 focus:ring-r-pink focus:ring-offset-2 focus:ring-offset-purple-500;
+    @apply transition-colors duration-300 ease-in-out;
+  }
+
+  .btn-pink {
+    @apply bg-r-pink text-white;
+    @apply hover:bg-r-gray hover:text-r-pink;
+  }
+  .btn-navy {
+    @apply bg-r-gray text-white;
+    @apply hover:bg-r-pink hover:text-r-gray;
+  }
+}
+.gradientSwap {
+  background: linear-gradient(45deg, #fe8568, #fe8568, #ff0e68);
+  background-size: 500% 500%;
+  animation: gradient 10s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.textXLarge {
+  @apply text-5xl font-semibold md:text-7xl 2xl:text-8xl;
+}
+
+.textLarge {
+  @apply text-3xl 2xl:text-4xl;
+}
+
+.textMedium {
+  @apply text-xl sm:text-2xl 2xl:text-3xl;
+}
+
+.textSmall {
+  @apply text-base sm:text-lg;
+}
+
+@responsive {
+  .pin-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .pin-x-center {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .pin-y-center {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.hamburger-icon span {
+  @apply absolute right-0 block w-full border-t-2 border-solid border-white opacity-100;
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-icon.open span,
+.hamburger-icon:hover span {
+  @apply w-full;
+}
+
+.hamburger-icon span:nth-child(1),
+.hamburger-icon span:nth-child(2),
+.hamburger-icon span:nth-child(3) {
+  top: 9px;
+}
+
+.hamburger-icon > span:nth-child(1) {
+  @apply top-0;
+}
+
+.hamburger-icon > span:nth-child(3) {
+  top: 18px;
+}
+
+.service-summary li {
+  @apply text-2xl font-bold;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+  top: 10px;
+  transform: rotate(135deg);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:nth-child(3) {
+  top: 10px;
+  transform: rotate(-135deg);
+}
+
+/* Faux outline for older browsers */
+.outline {
+  color: white; /* Unfortunately you can't use transparent here … */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* Real outline for modern browsers */
+@supports ((text-stroke: 2px white) or (-webkit-text-stroke: 2px white)) {
+  .outline {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    text-stroke: 2px white;
+    text-shadow: none;
+  }
+}
