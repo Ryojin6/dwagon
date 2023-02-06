@@ -6,7 +6,7 @@
       </div>
       <div class="absolute inset-0 hidden w-full bg-black/20 lg:block" />
       <div
-        class="lg:pin-y-center flex flex-col bg-black/80 p-10 text-center lg:absolute lg:max-w-2xl lg:p-10 lg:pt-16"
+        class="lg:pin-y-center flex flex-col bg-black/80 p-10 text-center lg:absolute lg:max-w-2xl lg:p-10"
         :class="reverse ? 'lg:left-10' : 'lg:right-10'"
       >
         <h2
