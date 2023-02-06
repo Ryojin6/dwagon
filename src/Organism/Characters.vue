@@ -41,10 +41,6 @@
               <div
                 class="bottom-0 right-0 z-10 bg-r-pink p-6 md:absolute md:w-2/3"
               >
-                <div class="flex font-title uppercase">
-                  <h2 class="textMedium">{{ card.title }}</h2>
-                </div>
-
                 <div
                   class="space-y-4 pt-2 text-sm font-light"
                   v-html="card.description"

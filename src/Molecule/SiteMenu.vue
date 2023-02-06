@@ -10,6 +10,11 @@
           :item="item"
           class="transition-all duration-300 ease-in-out"
         />
+        <a
+          href="#how-to-buy"
+          class="bg-r-pink px-6 py-2 transition-all duration-300 ease-in-out hover:bg-white hover:text-black"
+          >How to Buy</a
+        >
       </div>
       <transition name="slide-fade">
         <div
@@ -57,24 +62,16 @@ export default {
     return {
       links: [
         {
-          label: 'Tokenomic',
-          link: '#tokenomic',
+          label: 'Game',
+          link: '#game',
         },
         {
-          label: 'About',
-          link: '/about',
+          label: 'Token',
+          link: '#how-to-buy',
         },
         {
-          label: 'FAQ',
-          link: '/faq',
-        },
-        {
-          label: 'How to Buy',
-          link: '/how-to-buy',
-        },
-        {
-          label: 'Phases',
-          link: '/phases',
+          label: 'NFT',
+          link: '#nft',
         },
       ],
       toggled: false,

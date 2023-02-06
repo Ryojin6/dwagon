@@ -3,6 +3,7 @@
     tp="large"
     bp="large"
     class="relative w-full bg-r-pink"
+    id="nft"
     full-width
   >
     <MoleculeTitle

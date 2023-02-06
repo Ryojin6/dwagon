@@ -24,7 +24,7 @@
         </div>
       </AtomInner>
     </AtomSection> -->
-    <OrganismCharacters class="relative z-30 -mb-10 pb-32" />
+    <OrganismCharacters class="relative z-30 -mb-10 pb-32" id="game" />
 
     <AtomSection full-width>
       <AtomInner
@@ -91,7 +91,7 @@
         />
       </AtomInner>
     </AtomSection>
-    <AtomSection tp="large" bp="large">
+    <AtomSection tp="large" bp="large" id="how-to-buy">
       <MoleculeTitle
         title="How to Buy"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aut
