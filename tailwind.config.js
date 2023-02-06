@@ -10,9 +10,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Dwagon', 'sans-serif'],
-        dela: ['Dela', 'sans-serif'],
-        mont: ['Montserrat', 'sans-serif'],
+        title: ['Roboto', 'sans-serif'],
+        sans: ['Montserrat', 'sans-serif'],
       },
 
       colors: {

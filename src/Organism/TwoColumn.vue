@@ -1,27 +1,25 @@
 <template>
   <AtomAnimate class="relative">
-    <div
-      class="absolute top-0 left-0 z-[-1] mt-2 ml-2 h-full w-full bg-white"
-    />
-    <div
-      class="my-64 flex flex-col items-center bg-r-pink px-6 py-6 lg:flex-row lg:space-x-12 xl:p-10 xl:py-0 2xl:px-12"
-      :class="{ 'lg:flex-row-reverse lg:space-x-reverse': reverse }"
-    >
-      <div class="flex items-end justify-end lg:-mt-40 lg:w-1/2">
+    <div>
+      <div class="w-full">
         <img :src="image" alt="" />
       </div>
-      <div class="flex flex-col pt-16 lg:w-1/2 lg:py-10">
+      <div class="absolute inset-0 hidden w-full bg-black/20 lg:block" />
+      <div
+        class="lg:pin-y-center flex flex-col bg-black/80 p-10 text-center lg:absolute lg:max-w-2xl lg:p-10 lg:pt-16"
+        :class="reverse ? 'lg:left-10' : 'lg:right-10'"
+      >
         <h2
           v-if="subtitle"
           class="textLarge pb-2 font-bold uppercase text-white"
         >
           {{ subtitle }}
         </h2>
-        <h3 class="textLarge font-sans font-bold uppercase text-r-charcoal">
+        <h3 class="textLarge font-title uppercase text-r-pink">
           {{ title }}
         </h3>
         <div
-          class="textSmall prose-white prose pt-6 !text-white"
+          class="textSmall prose-white prose max-w-full pt-6 !text-white"
           v-html="description"
         />
       </div>

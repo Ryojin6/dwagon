@@ -1,8 +1,7 @@
 <template>
-  <TemplateDefault
-    class="relative min-h-screen overflow-x-hidden bg-black font-sans"
-  >
-    <AtomSection
+  <TemplateDefault class="relative overflow-x-hidden bg-black font-sans">
+    <OrganismVideo />
+    <!-- <AtomSection
       class="relative flex h-screen max-h-[1080px] w-full items-center"
     >
       <div
@@ -24,50 +23,36 @@
           eos harum placeat, sunt debitis veritatis? Dolor quasi modi nihil.
         </div>
       </AtomInner>
-    </AtomSection>
-    <AtomSection tp="large" bp="large">
-      <AtomInner>
-        <MoleculeTitle
-          title="P2E gaming platform which connects 2D NFT collection with 3D in-game
-          Avatars"
-          class="text-white"
-        />
-        <AtomAnimate class="relative mx-auto max-w-6xl">
-          <div class="aspect-w-16 aspect-h-9 rounded-3xl">
-            <video
-              ref="myvideo"
-              poster="/landingimage.jpg"
-              controls
-              class="rounded-3xl bg-transparent"
-            >
-              <source src="/bg.mp4" type="video/mp4" />
-            </video>
-            <div
-              v-if="!playVideo"
-              class="absolute inset-0 h-full w-full rounded-3xl opacity-50"
-            />
-          </div>
-          <div v-if="!playVideo" class="pin-center absolute">
-            <button
-              type="button"
-              title="Play informational video"
-              class="lg:mt-10"
-              @click="play"
-            >
-              <AtomIconPlay class="w-16 md:w-24 xl:w-32 2xl:w-64" />
-            </button>
+    </AtomSection> -->
+    <OrganismCharacters class="relative z-30 -mb-10 pb-32" />
+
+    <AtomSection full-width>
+      <AtomInner
+        v-aos
+        class="transition-all duration-[1200ms] ease-in-out"
+        aos-from="px-64"
+        aos-to="px-0"
+      >
+        <AtomAnimate class="relative mx-auto">
+          <div class="aspect-h-9 aspect-w-16">
+            <iframe
+              src="https://player.vimeo.com/video/796388981"
+              width="640"
+              height="360"
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+            ></iframe>
           </div>
         </AtomAnimate>
       </AtomInner>
     </AtomSection>
 
-    <AtomSection tp="large">
+    <AtomSection full-width class="text-white">
       <MoleculeTitle
-        title="Tokenomic"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aut
-          alias praesentium quod deleniti velit, qui itaque ex quis laboriosam
-          eos harum placeat, sunt debitis veritatis? Dolor quasi modi nihil."
-        class="-mb-20 text-white"
+        class="!py-32 text-r-pink"
+        title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aut
+          alias praesentium quod deleniti velit."
       />
       <AtomInner>
         <OrganismTwoColumn
@@ -75,7 +60,7 @@
           description="Two special flames will erupt from the Dwagon’s breath. The first 
               will melt its tokens, to be destroyed forever. The second will toast its tokens 
               in the AMM to induce instant price shock."
-          image="/1.png"
+          image="/1.jpg"
         />
         <OrganismTwoColumn
           title="Melt"
@@ -83,7 +68,7 @@
               new melting feature will wipe tokens making them no longer usable by anyone
                and they will be wiped from the blockchain forever. They are not sent to a 
                dead wallet or deployed, they are instead destroyed forever."
-          image="/2.png"
+          image="/2.jpg"
           reverse
         />
         <OrganismTwoColumn
@@ -91,7 +76,7 @@
           description="The supply of V2 $Dwagon on Etherscan will drop from 1,000,000,000 
               tokens, and it will continue dropping every time someone buys or sells the token.
                The Dwagon’s wings will carry its holders to great new heights because of this."
-          image="/1.png"
+          image="/3.jpg"
         />
         <OrganismTwoColumn
           title="Toast"
@@ -101,12 +86,12 @@
                the supply of $Dwagon in the AMM, causing an instant price impact. Toasting will 
                speed up the supply shock. Every time tokens are toasted, the Dwagon’s spirit 
                will be boosted even further."
-          image="/2.png"
+          image="/4.jpg"
           reverse
         />
       </AtomInner>
     </AtomSection>
-    <AtomSection tp="small" bp="large">
+    <AtomSection tp="large" bp="large">
       <MoleculeTitle
         title="How to Buy"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aut
@@ -116,7 +101,7 @@
       />
       <AtomInner class="grid gap-20 text-white lg:grid-cols-2">
         <AtomAnimate
-          class="flex flex-col justify-center space-y-10 text-center"
+          class="flex flex-col justify-center space-y-10 text-center font-title"
         >
           <div>
             <span class="textXLarge">5%</span>
@@ -142,11 +127,14 @@
         </AtomAnimate>
       </AtomInner>
     </AtomSection>
+    <OrganismSlider />
   </TemplateDefault>
 </template>
 
 <script>
+import Characters from '../Organism/Characters.vue';
 export default {
+  components: { Characters },
   data() {
     return {
       playVideo: false,
@@ -160,10 +148,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.voltichange-widget {
-  width: 500px;
-  height: 460px;
-}
-</style>

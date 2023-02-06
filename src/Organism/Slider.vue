@@ -1,56 +1,114 @@
 <template>
-  <div class="relative w-full">
+  <AtomSection
+    tp="large"
+    bp="large"
+    class="relative w-full bg-r-pink"
+    full-width
+  >
+    <MoleculeTitle
+      title="Dwagon NFT Collection"
+      subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aut
+          alias praesentium quod deleniti velit, qui itaque ex quis laboriosam
+          eos harum placeat, sunt debitis veritatis? Dolor quasi modi nihil."
+      class="mb-10 text-white"
+    />
+    <slot />
     <hooper
       ref="carousel"
-      class="focus:outline-none h-full"
+      class="focus:outline-none relative z-10 h-full"
       :wheel-control="false"
       :infinite-scroll="true"
-      :settings="mintSlider ? mintSetting : hooperSettings"
+      :settings="hooperSettings"
     >
-      <slide>
-        <img src="/slider/8.jpg" alt="" />
+      <slide
+        class="text-a-brown items-center !px-4 text-center md:flex md:text-left"
+      >
+        <div class="">
+          <img src="/s2.png" alt="" />
+        </div>
       </slide>
-      <slide>
-        <img src="/slider/3.jpg" alt="" />
+      <slide
+        class="text-a-brown items-center !px-4 text-center md:flex md:text-left"
+      >
+        <div class="">
+          <img src="/s1.png" alt="" />
+        </div>
       </slide>
-      <slide>
-        <img src="/slider/12.jpg" alt="" />
+      <slide
+        class="text-a-brown items-center !px-4 text-center md:flex md:text-left"
+      >
+        <div class="">
+          <img src="/s3.png" alt="" />
+        </div>
       </slide>
-      <slide>
-        <img src="/slider/4.jpg" alt="" />
+      <slide
+        class="text-a-brown items-center !px-4 text-center md:flex md:text-left"
+      >
+        <div class="">
+          <img src="/s4.png" alt="" />
+        </div>
       </slide>
-      <slide>
-        <img src="/slider/5.jpg" alt="" />
+      <slide
+        class="text-a-brown items-center !px-4 text-center md:flex md:text-left"
+      >
+        <div class="">
+          <img src="/s5.png" alt="" />
+        </div>
       </slide>
-      <slide>
-        <img src="/slider/10.jpg" alt="" />
+      <slide
+        class="text-a-brown items-center !px-4 text-center md:flex md:text-left"
+      >
+        <div class="">
+          <img src="/s6.png" alt="" />
+        </div>
       </slide>
-      <slide>
-        <img src="/slider/1.jpg" alt="" />
+      <slide
+        class="text-a-brown items-center !px-4 text-center md:flex md:text-left"
+      >
+        <div class="">
+          <img src="/s7.png" alt="" />
+        </div>
       </slide>
-      <slide>
-        <img src="/slider/7.jpg" alt="" />
+      <slide
+        class="text-a-brown items-center !px-4 text-center md:flex md:text-left"
+      >
+        <div class="">
+          <img src="/s8.png" alt="" />
+        </div>
       </slide>
-      <slide>
-        <img src="/slider/9.jpg" alt="" />
-      </slide>
-      <slide>
-        <img src="/slider/6.jpg" alt="" />
-      </slide>
-      <slide>
-        <img src="/slider/11.jpg" alt="" />
-      </slide>
-      <slide>
-        <img src="/slider/2.jpg" alt="" />
-      </slide>
-      <slide>
-        <img src="/slider/13.jpg" alt="" />
-      </slide>
-
-      <hooper-pagination v-if="!noPaginate" slot="hooper-addons" />
     </hooper>
-    <div
-      class="md:pin-y-center absolute bottom-0 mx-auto w-full md:bottom-auto"
+    <div class="absolute bottom-0 w-full opacity-40">
+      <!-- simple marquee text -->
+      <marquee
+        behavior="alternate"
+        direction="left"
+        class="strokeText flex h-44 items-center"
+      >
+        <span
+          v-for="i in 40"
+          :key="i"
+          class="font-title text-[15rem] font-bold"
+        >
+          DWAGON
+        </span>
+      </marquee>
+      <!-- simple marquee text -->
+      <marquee
+        behavior="alternate"
+        direction="right"
+        class="strokeText flex h-44 items-center"
+      >
+        <span
+          v-for="i in 40"
+          :key="i"
+          class="font-title text-[15rem] font-bold"
+        >
+          DWAGON
+        </span>
+      </marquee>
+    </div>
+    <!-- <div
+      class="md:pin-y-center absolute bottom-0 z-20 mx-auto w-full md:bottom-auto"
     >
       <div class="flex items-center justify-between">
         <button @click.prevent="slidePrev">
@@ -61,15 +119,19 @@
           <AtomIconNext class="w-8 lg:w-12" inverted />
         </button>
       </div>
-    </div>
-  </div>
+    </div> -->
+  </AtomSection>
 </template>
 
 <script>
-import { Hooper, Slide, Pagination as HooperPagination } from 'hooper';
+import { Hooper, Slide } from 'hooper';
 import 'hooper/dist/hooper.css';
 
 export default {
+  components: {
+    Hooper,
+    Slide,
+  },
   props: {
     noPaginate: {
       type: Boolean,
@@ -80,37 +142,20 @@ export default {
       default: false,
     },
   },
-  components: {
-    Hooper,
-    Slide,
-    HooperPagination,
-  },
   data() {
     return {
       carouselData: 0,
-      mintSetting: {
-        itemsToShow: 1,
 
+      hooperSettings: {
+        centerMode: true,
+        autoPlay: true,
+        itemsToShow: 1,
         breakpoints: {
           800: {
-            centerMode: false,
             itemsToShow: 1,
           },
           1000: {
-            itemsToShow: 2,
-          },
-        },
-      },
-      hooperSettings: {
-        itemsToShow: 1,
-        centerMode: true,
-        breakpoints: {
-          800: {
-            centerMode: false,
-            itemsToShow: 2,
-          },
-          1000: {
-            itemsToShow: 4,
+            itemsToShow: 4.2,
             pagination: 'fraction',
           },
         },
@@ -149,5 +194,50 @@ export default {
 }
 .hooper-indicator {
   @apply h-3 w-3 rounded-full;
+}
+.strokeText {
+  -webkit-text-fill-color: #231f20;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #c6b784;
+}
+
+/* CSS */
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid white;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: '';
+  @apply bg-white;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
 }
 </style>

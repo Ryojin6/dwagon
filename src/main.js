@@ -57,6 +57,11 @@ export default function main(Vue, { head }) {
       // eslint-disable-next-line max-len
       href: `https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;300;400;500&display=swap`,
     },
+    {
+      rel: 'stylesheet',
+      // eslint-disable-next-line max-len
+      href: `https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300;1,400&display=swap`,
+    },
   );
   head.meta.push(
     {

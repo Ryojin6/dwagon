@@ -76,7 +76,7 @@ html {
 }
 
 .textSmall {
-  @apply text-base sm:text-lg;
+  @apply text-base;
 }
 
 @responsive {

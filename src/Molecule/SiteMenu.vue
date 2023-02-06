@@ -2,7 +2,7 @@
   <nav class="text-white xl:w-full">
     <div class="z-40 flex h-full w-full items-center uppercase">
       <div
-        class="custom-transition textSmall font-machina z-30 hidden w-full items-center justify-end space-x-10 font-bold xl:flex"
+        class="custom-transition z-30 hidden w-full items-center justify-end space-x-10 font-title text-base font-bold xl:flex"
       >
         <AtomSiteMenuItem
           v-for="item in links"
@@ -21,7 +21,7 @@
             v-for="item in links"
             :key="item.label"
             :item="item"
-            class="textLarge text-white xl:hidden"
+            class="textLarge text-black scrolled:text-white xl:hidden"
           />
         </div>
       </transition>
