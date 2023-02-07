@@ -115,16 +115,17 @@ export default {
           image: '/dragon2.png',
 
           description: `  <p>
-         A dragon hunter is skilled in all forms of combat and is extraordinarily
-          capable of tracking and hunting down almost any foe. As the fastest dragon
-           class in the skies and equipped with the keenest sense of smell, hunters
-            are extremely well advantaged in the art of finding their objects of 
-            desire. Often seen with a terrifying flaming sword and fiery bow in 
-            combat, members of the hunter class are able to use the natural fire 
-            breathing abilities shared by all dragons to amplify the special fire 
-            resistant weapons and tools they use to hunt and fight. Whether it’s
-             a simple raiding party quest or a long harrowing journey to recover
-              a precious artifact, no guild is the worse by having a capable hunter at their side.
+      A Hunter dragon is skilled in all forms of combat and is extraordinarily 
+      capable of tracking and hunting down almost any foe. As the fastest dragon
+       class in the skies and equipped with the keenest sense of smell, hunters are 
+       extremely well advantaged in the art of finding their objects of desire. 
+       Often seen with a terrifying flaming sword and fiery bow in combat, members 
+       of the hunter class are able to use the natural fire breathing abilities 
+       shared by all dragons to amplify the special fire resistant weapons and tools 
+       they use to hunt and fight. Whether it’s a simple raiding party quest or a long 
+       harrowing journey to recover a precious artifact, no guild is the worse by
+        having a capable hunter at their side. 
+
 
             </p>
            `,

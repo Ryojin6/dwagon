@@ -9,7 +9,9 @@
       :aria-controls="`title${_uid}`"
       @click="show = !show"
     >
-      <h3 class="text-xl text-r-charcoal xl:text-2xl 2xl:text-3xl">
+      <h3
+        class="text-left font-title text-xl text-r-charcoal xl:text-2xl 2xl:text-3xl"
+      >
         {{ title }}
       </h3>
       <span class="flex items-center pt-6 pr-6 font-bold">
@@ -24,10 +26,9 @@
 
     <div
       v-if="show"
-      class="textSmall relative z-10 w-full bg-white px-6 pb-6 text-left"
-    >
-      {{ description }}
-    </div>
+      class="textSmall prose relative z-10 w-full max-w-full bg-white px-6 pb-6 text-left"
+      v-html="description"
+    />
   </div>
 </template>
 

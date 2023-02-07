@@ -73,6 +73,10 @@ export default {
           label: 'NFT',
           link: '#nft',
         },
+        {
+          label: 'FAQ',
+          link: '#FAQ',
+        },
       ],
       toggled: false,
       toggleSearch: false,

@@ -128,6 +128,7 @@
       </AtomInner>
     </AtomSection>
     <OrganismSlider />
+    <OrganismFAQ />
   </TemplateDefault>
 </template>
 
