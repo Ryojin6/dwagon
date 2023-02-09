@@ -1,19 +1,75 @@
 <template>
-  <AtomSection
-    tp="large"
-    bp="large"
-    class="relative w-full bg-r-pink"
-    id="nft"
-    full-width
-  >
+  <AtomSection tp="large" bp="large" class="relative w-full bg-r-pink" id="nft">
     <MoleculeTitle
       title="Dwagon NFT Collection"
-      subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aut
-          alias praesentium quod deleniti velit, qui itaque ex quis laboriosam
-          eos harum placeat, sunt debitis veritatis? Dolor quasi modi nihil."
+      subtitle="The upcoming collection of 2D avatars have a robust suite of utilities 
+      tied in with their development, giving avatar holders immediate and significant 
+      tangible benefits including a range of options to earn both passively and actively. "
       class="mb-10 text-white"
     />
     <slot />
+
+    <div
+      class="prose-white prose mx-auto grid max-w-7xl gap-4 pb-10 text-white md:grid-cols-2 md:gap-8"
+    >
+      <div>
+        <p>
+          The upcoming collection of 2D avatars have a robust suite of utilities
+          tied in with their development, giving avatar holders immediate and
+          significant tangible benefits including a range of options to earn
+          both passively and actively.
+        </p>
+
+        <p>
+          Simply by staking the avatar in one of the project staking options,
+          the holder starts generating passive yield which can be used to buy
+          assets for the game as well as on-chain assets! Effectively, simply
+          leaving the collectible staked gives avatar holders the ability to
+          collect and resell new game assets for a profit easily. All kinds of
+          strategies can be employed to dramatically increase the amount of
+          passive yield the holder of an avatar is receiving.
+        </p>
+
+        <p>
+          The 2D avatar also loads a corresponding game-ready 3D character in
+          the MMORPG and in the PvP. The collectible is uniquely associated with
+          the avatar’s profile account and game inventory. In these
+          environments, the avatar holder can earn yield and collect more assets
+          through active gameplay including successful combat and the completion
+          of quests.
+        </p>
+      </div>
+      <div>
+        <p>
+          We can keep the game info in the middle Then the token info on the
+          bottom
+        </p>
+
+        <p>
+          And rather than what is there for the token I would like this info
+        </p>
+
+        <p>
+          With a strict focus on contract integrity and deflationary tokenomics,
+          the $Dwagon token is primed to heat things up for holders. With
+          liquidity locked for 100 years, Dwagon features low taxes devoted to
+          development of the ecosystem and marketing, totaling 5% on buy and 5%
+          on sells. The Dwagon community has a flexible but completely secure
+          contract which the team uses for community events featuring 0% buy
+          tax!
+        </p>
+
+        <p>
+          There are two special flames that erupt in the contract from the
+          Dwagon’s breath. The melting of tokens takes place automatically on
+          transactions and the mighty Dwagon can also toast tokens in the AMM to
+          induce instant price shock. The total supply of $Dwagon on Etherscan
+          has already dropped from the original 1,000,000,000 tokens by more
+          than 0.5% and this number will continue dropping every time someone
+          buys or sells the token.
+        </p>
+      </div>
+    </div>
     <hooper
       ref="carousel"
       class="focus:outline-none relative z-10 h-full"

@@ -1,6 +1,6 @@
 <template>
   <TemplateDefault class="relative overflow-x-hidden bg-black font-sans">
-    <OrganismVideo />
+    <OrganismVideo class="pt-40 sm:pt-0" />
     <!-- <AtomSection
       class="relative flex h-screen max-h-[1080px] w-full items-center"
     >
@@ -24,7 +24,7 @@
         </div>
       </AtomInner>
     </AtomSection> -->
-    <OrganismCharacters class="relative z-30 -mb-10 pb-32" id="game" />
+    <OrganismCharacters class="relative z-30 pb-32 md:-mb-10" id="game" />
 
     <AtomSection full-width>
       <AtomInner
@@ -122,7 +122,7 @@
           <iframe
             src="https://voltichange.net/api/widget/?chain=1&amp;darktheme=true&amp;tokenin=Native&amp;tokenout=0xdf1a2f85f3af80e85d14ddaab2933c8caa09294a&amp;slippage=5"
             frameborder="0"
-            class="voltichange-widget"
+            class="voltichange-widget w-full"
           ></iframe>
         </AtomAnimate>
       </AtomInner>

@@ -4,7 +4,7 @@
       <MoleculeTitle
         title="P2E gaming platform which connects 2D NFT collection with 3D in-game
           Avatars"
-        class="pt-24 text-white"
+        class="text-white sm:pt-24"
       />
       <div
         class="mx-auto w-full max-w-6xl items-center pt-10 lg:flex lg:space-x-10"

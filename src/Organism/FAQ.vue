@@ -7,7 +7,7 @@
   >
     <AtomInner>
       <AtomAnimate>
-        <MoleculeTitle title="FAQ" class="text-white" subtitle="Lorem ipsum" />
+        <MoleculeTitle title="FAQ" class="pb-10 text-white" />
       </AtomAnimate>
       <AtomAnimate class="mb-10">
         <MoleculeAccordionCard
