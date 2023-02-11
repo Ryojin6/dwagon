@@ -27,8 +27,8 @@ export default {
     return {
       faq: [
         {
-          title: 'What is Deagons’s custom minting dapp about? ',
-          description: `Dwagon’s custom minting dapp allows for holders to receive 
+          title: 'What is Dwagon`s custom minting dapp about? ',
+          description: `Dwagon's custom minting dapp allows for holders to receive 
           discounts, increased rarity percentage, and can be updated for future mints.
            This opens a realm of possibilities for new characters and accessory packs 
            for the MMORPG game.`,

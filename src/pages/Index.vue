@@ -24,6 +24,8 @@
         </div>
       </AtomInner>
     </AtomSection> -->
+    <OrganismSlider />
+
     <OrganismCharacters class="relative z-30 pb-32 md:-mb-10" id="game" />
 
     <AtomSection full-width>
@@ -51,54 +53,50 @@
     <AtomSection full-width class="text-white">
       <MoleculeTitle
         class="!py-32 text-r-pink"
-        title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aut
-          alias praesentium quod deleniti velit."
+        title="Dwagon stands out from the rest and will advance into a complex 
+and engaging ecosystem centered around gaming, community, a unique 
+contract, and innovation. "
       />
       <AtomInner>
         <OrganismTwoColumn
-          title="Two Flames"
-          description="Two special flames will erupt from the Dwagon’s breath. The first 
-              will melt its tokens, to be destroyed forever. The second will toast its tokens 
-              in the AMM to induce instant price shock."
+          title="DEFLATIONARY"
+          description="With a strict focus on contract integrity and deflationary 
+          tokenomics, the $Dwagon token is primed to heat things up for holders.
+"
           image="/1.jpg"
         />
         <OrganismTwoColumn
-          title="Melt"
-          description="On every transaction, a chunk of tokens are melted. This brand 
-              new melting feature will wipe tokens making them no longer usable by anyone
-               and they will be wiped from the blockchain forever. They are not sent to a 
-               dead wallet or deployed, they are instead destroyed forever."
+          title="SAFE"
+          description="With liquidity locked for 100 years, Dwagon features low taxes 
+          devoted to development of the ecosystem and marketing, totaling 5% on buy
+           and 5% on sells. The Dwagon community has a flexible but completely secure 
+           contract which the team uses for community events featuring 0% buy tax!
+"
           image="/2.jpg"
           reverse
         />
         <OrganismTwoColumn
-          title="Total Supply: 1,000,000,000"
+          title="Token Supply: 1,000,000,000"
           description="The supply of V2 $Dwagon on Etherscan will drop from 1,000,000,000 
               tokens, and it will continue dropping every time someone buys or sells the token.
                The Dwagon’s wings will carry its holders to great new heights because of this."
           image="/3.jpg"
         />
         <OrganismTwoColumn
-          title="Toast"
-          description="The second flame of Dwagon’s breath will toast tokens in the AMM. 
-              As the contract is live and tokens are being automatically melted, the contract
-               will also start toasting tokens in the AMM. Every toasting session will reduce 
-               the supply of $Dwagon in the AMM, causing an instant price impact. Toasting will 
-               speed up the supply shock. Every time tokens are toasted, the Dwagon’s spirit 
-               will be boosted even further."
+          title="UNIQUE BURN FUNCTION"
+          description="The melting of tokens takes place automatically on transactions and the
+           mighty Dwagon can also toast tokens in the AMM to induce instant price shock. The 
+           total supply of $Dwagon on Etherscan has already dropped from the original 1,000,000,000
+            tokens by more than 0.5% and this number will continue dropping every time someone 
+            buys or sells the token.
+"
           image="/4.jpg"
           reverse
         />
       </AtomInner>
     </AtomSection>
     <AtomSection tp="large" bp="large" id="how-to-buy">
-      <MoleculeTitle
-        title="How to Buy"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum aut
-          alias praesentium quod deleniti velit, qui itaque ex quis laboriosam
-          eos harum placeat, sunt debitis veritatis? Dolor quasi modi nihil."
-        class="mb-10 text-white"
-      />
+      <MoleculeTitle title="How to Buy" class="mb-10 text-white" />
       <AtomInner class="grid gap-20 text-white lg:grid-cols-2">
         <AtomAnimate
           class="flex flex-col justify-center space-y-10 text-center font-title"
@@ -127,7 +125,7 @@
         </AtomAnimate>
       </AtomInner>
     </AtomSection>
-    <OrganismSlider />
+
     <OrganismFAQ />
   </TemplateDefault>
 </template>
