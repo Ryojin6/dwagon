@@ -11,6 +11,12 @@
           class="transition-all duration-300 ease-in-out"
         />
         <a
+          class="menu-item relative transition-all duration-300 ease-in-out hover:text-r-pink scrolled:text-base"
+          href="https://dwagonweborn.com/assets/whitepaper.pdf"
+          target="_blank"
+          >Whitepaper</a
+        >
+        <a
           href="#how-to-buy"
           class="bg-r-pink px-6 py-2 transition-all duration-300 ease-in-out hover:bg-white hover:text-black"
           >How to Buy</a
